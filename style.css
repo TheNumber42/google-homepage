@@ -9,12 +9,41 @@ html, body{
 a{
     text-decoration: none;
     font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-right: 6px;
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+    opacity: .85;
+}
+
+/* Utility */
+.btn{
+    font-weight: bold;
+    line-height: 28px;
+    color: #fff;
+    display: inline-block;
+    background: #4285f4;
+    background: -moz-linear-gradient(top,#4387fd,#4683ea);
+    padding: 0 12px;
+    border: 1px solid #4285f4;
+    white-space:nowrap;
+    cursor: default;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.btn:hover{
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+    opacity: 1;
 }
 
 /* Navbar */
 .navbar{
     display: flex;
     justify-content: end;
+    align-items: center;
     padding: 20px;
 }
 
@@ -56,7 +85,15 @@ a{
 
 /* Logo */
 .logo{
-    margin: 100px auto;
+    position: relative;
+    margin: 20px auto;
+}
+
+.share-icon{
+    position: absolute;
+    left: 420px;
+    bottom: 20px;
+    opacity: .85;
 }
 
 /* Search */
@@ -64,20 +101,27 @@ a{
     position: relative;
 }
 
-.search-border{
+.search-border{ 
     background: white;
     border: 1px solid #dfe1e5;
     box-shadow: none;
     border-radius: 24px;
+    max-width: 548px;
     height: 44px;
     margin: 0 auto;
 }
 
+
 #search-bar{
+    display: inline-block;
     background-color: transparent;
     border: none;
-    max-width: 560px;
-    display: absolute;
+    outline: none;
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    line-height: 34px;
+    width: 88%;
 }
 
 /* svg */
@@ -87,6 +131,55 @@ svg{
     display: flex;
     float: left;
     position: absolute;
-    bottom: -7px;
+    top: 9px;
     left: 10px;
 }
+
+/* Search Buttons */
+#search-btn{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.search-btn{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 7px 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search-btn:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: linear-gradient(top,#f8f9fa,#f8f9fa);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.google-language{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hyperlink{
+    font-size: 16px;
+    color: blue;
+}
+
+
+
+
+
+

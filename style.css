@@ -176,7 +176,65 @@ svg{
 .hyperlink{
     font-size: 16px;
     color: blue;
+    text-decoration: underline;
 }
+
+/* Footer */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 82px;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    color: rgba(0,0,0,.54);
+    background-color: rgb(242, 242, 242);
+}
+
+.footer a{
+    color: rgba(0,0,0,.54);
+}
+
+.ft-item-top,
+.ft-item-bottom{
+    height: 50%;
+}
+
+.ft-item-top{
+    border-bottom: 1px solid #dadce0;
+    border-bottom-color: rgb(218, 220, 224);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.ft-item-top p{
+    padding-left: 40px;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-tab-1{
+    display: flex;
+    margin-left: 13px;
+    align-items: center;    
+}
+
+.wrapper-tab-2{
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.ft-item-bottom a{
+    padding-left: 27px;
+}
+
+
 
 
 
